@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #4e73df, #1cc88a);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 110vh;
+        }
+
+        .registration-container {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 16px;
+            display: block;
+            text-align: left;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"], input[type="password"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 30px;
+            border: none;
+            background-color: #1cc88a;
+            color: #fff;
+            font-size: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #4e73df;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 600px) {
+            .registration-container {
+                width: 90%;
+            }
+            h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-container">
+        <h1>Please Enter Your Details</h1>
+        <form action="Register">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required />
+
+            <label for="custid">CustId:</label>
+            <input type="text" name="custid" id="custid" required />
+
+            <label for="accno">Accno:</label>
+            <input type="text" name="accno" id="accno" required />
+
+            <label for="pwd">Password:</label>
+            <input type="password" name="pwd" id="pwd" required />
+
+            <label for="bal">Balance:</label>
+            <input type="text" name="bal" id="bal" required />
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required />
+
+            <input type="submit" value="Register" />
+        </form>
+    </div>
+</body>
+</html>

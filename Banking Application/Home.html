@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home Page</title>
+ <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #4e73df, #1cc88a);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+
+        a {
+            font-size: 18px;
+            text-decoration: none;
+            background-color: #ffffff;
+            color: #333;
+            padding: 15px 30px;
+            margin: 10px;
+            border-radius: 25px;
+            transition: all 0.4s ease;
+            border: 2px solid transparent;
+        }
+
+        a:hover {
+            background-color: #4e73df;
+            color: #fff;
+            border-color: #4e73df;
+            transform: scale(1.1);
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            a {
+                font-size: 16px;
+                padding: 12px 24px;
+            }
+        }
+        input[type="submit"] {
+            padding: 10px 30px;
+            border: none;
+            background-color: #1cc88a;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #4e73df;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+   <h1>welcome to your Account...</h1>
+   	<a href="Checkbalance">Click here to check Balance</a> 
+    <a href="ChangePwd.html">Click here to change Password</a>  
+    <a href="Transfer.html">Click here to transfer Amount</a> 
+    <a href="GetStatement">Click here to get Statement</a> 
+    <a href="ApplyLoan.html">Click here to apply Loan</a><br>
+    
+    <form action="Logout">
+         <input type="submit" value="Logout"/>
+    </form>
+</body>
+</html>
